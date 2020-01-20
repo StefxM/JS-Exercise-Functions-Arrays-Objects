@@ -91,7 +91,7 @@ return {
 }
 }
 
-/*
+
 // ⭐️ Example Test Data ⭐️
 
 var inventory = [
@@ -111,7 +111,7 @@ var inventory = [
   { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
   /// ... Truncated
 ]
-*/
+
 /**
   * ### Example Array Challenge:
   * 
@@ -146,7 +146,7 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  return `This is a ${inventory[index]car_make} ${inventory[index].car_model}`;
+  return `This is a ${inventory[index].car_make} ${inventory[index].car_model}`
 }
 
 /**
@@ -161,7 +161,7 @@ function getCarInfoByIndex(inventory, index) {
  * it will return `This is a Lincoln Town Car`.
 */
 function getLastCarInfo(inventory) {
-  return `This is a ${inventory[inventory.length-1].car_make} ${inventory[inventory.length-1].car_model}`;
+  return `This is a ${inventory[inventory.length - 1].car_make} ${inventory[inventory.length - 1].car_model}`;
 }
 
 /**
@@ -177,7 +177,10 @@ function getLastCarInfo(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoById(inventory, id) {
-  return `This is a ${inventory[id].car_make} ${inventory[id].car_model}`;
+  empty Array
+  make a loop
+
+  return `This is a ${inventory.car_make} ${inventory.car_model}`;
 }
 
 /**
@@ -188,9 +191,9 @@ function getCarInfoById(inventory, id) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
 */
-function sortCarInventory(carsArr) {
+function sortCarInventory(inventory) {
   const carModels = [];
-  carModels.sort
+  inventory.sort
 }
 
 /**
@@ -202,8 +205,9 @@ function sortCarInventory(carsArr) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears(/* code here */) {
-  /* code here */
+function getModelYears(inventory) {
+  const carYears = []
+  inventory.sort
 }
 
 /**
@@ -238,9 +242,9 @@ function getOlderCars(inventory, num) {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
 */
-function getGermanCars(/* code here */) {
+function getGermanCars(inventory) {
   /* code here */
-}   
+}
 
 /**
  * ### Challenge refactor to arrow functions
